@@ -9,7 +9,7 @@
   {%- if item.scripts is defined -%}
   {%- for name, script in item.scripts.iteritems() -%}
   {{ name }}
-    {{ script }}
+    {{ script | indent(4) }}
   endscript
   {% endfor -%}
   {% endif -%}
